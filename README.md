@@ -1,5 +1,7 @@
 # mixin
 
+[![Build Status](https://travis-ci.org/rambler-digital-solutions/es6-class-mixin.svg?branch=master)](https://travis-ci.org/rambler-digital-solutions/es6-class-mixin)
+
 Mixins for ES6 Classes. Based on [@mattmccray's gist](https://gist.github.com/mattmccray/e41e2bf18b13a153ce67)
 
 ## Install
