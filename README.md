@@ -4,8 +4,10 @@ Mixins for ES6 Classes. Based on [@mattmccray's gist](https://gist.github.com/ma
 
 ## API
 
+`mixin` extends given class by object with functions or properties.
+
 ```js
-mixin(ParentClass, ...Mixins) // return new MixedClass extended by Mixins
+mixin(ParentClass, ...mixins) // return new MixedClass extended by Mixins
 ```
 
 ## Examples
@@ -16,20 +18,20 @@ const mixin = require('es6-class-mixin');
 
 class ListItem {};
 
-let Draggable = {
+let draggable = {
   drag() { /* … */ }
 };
 
-let Droppable = {
+let droppable = {
   drop() { /* … */ }
 };
 
-class DraggableItem extends mixin(ListItem, Draggable, Droppable) {}
+class DraggableItem extends mixin(ListItem, draggable, droppable) {}
 ```
 
 ```js
 // Backbone
-class Input extends mixin(Backbone.View, Dispatcher.Mixin) {}
+class Input extends mixin(Backbone.View, Dispatcher.mixin) {}
 ```
 
 - - -
