@@ -1,4 +1,4 @@
-# mixin
+# Mixin for ES6 classes
 
 [![Build Status](https://travis-ci.org/rambler-digital-solutions/es6-class-mixin.svg?branch=master)](https://travis-ci.org/rambler-digital-solutions/es6-class-mixin)
 
