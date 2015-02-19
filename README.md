@@ -31,3 +31,9 @@ class DraggableItem extends mixin(ListItem, Draggable, Droppable) {}
 // Backbone
 class Input extends mixin(Backbone.View, Dispatcher.Mixin) {}
 ```
+
+- - -
+
+## License
+
+MIT
