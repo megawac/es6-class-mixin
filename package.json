@@ -1,6 +1,6 @@
 {
   "name": "es6-class-mixin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny tool to add mixins for ES6 classes.",
   "main": "index.es6",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rambler-digital-solutions/es6-dispatcher.git"
+    "url": "https://github.com/rambler-digital-solutions/es6-class-mixin.git"
   },
   "keywords": [
     "ES2015",
@@ -25,11 +25,11 @@
   },
   "homepage": "https://github.com/rambler-digital-solutions/es6-class-mixin",
   "devDependencies": {
+    "babel": "^4.3.0",
     "mocha": "^2.1.0",
     "should": "^5.0.0"
   },
   "dependencies": {
-    "babel": "^4.3.0",
     "debug": "^2.1.1"
   }
 }
