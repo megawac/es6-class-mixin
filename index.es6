@@ -7,7 +7,7 @@ module.exports = function(Parent, ...mixins) {
   debug('start to mixin to %s', Parent.name);
   class Mixed extends Parent {}
   for (let mixin of mixins) {
-    for (let prop of Object.keys(mixin)) {
+    for (let prop in mixin) {
       debug('mixin %s', prop);
       Mixed.prototype[prop] = mixin[prop];
     }

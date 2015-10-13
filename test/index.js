@@ -19,6 +19,12 @@ let Droppable = {
   drop() { return 'droppable'; }
 };
 
+let MyDraggable = Object.create(Draggable)
+MyDraggable.dragAndLog = function() {
+  console.log("Dragged");
+  return this.drag();
+}
+
 describe('mixin', () => {
 
   it('should work as extend-expression', () => {
@@ -27,6 +33,15 @@ describe('mixin', () => {
     view.should.have.property('isList');
     view.drag().should.be.equal('draggable');
     view.drop().should.be.equal('droppable');
+  });
+
+  it('should work as inherited properites', () => {
+    class View extends mixin(ListItem, MyDraggable, Droppable) {}
+    let view = new View();
+    view.should.have.property('isList');
+    view.drag().should.be.equal('draggable');
+    view.drop().should.be.equal('droppable');
+    view.dragAndLog().should.be.equal('draggable');
   });
 
 });
