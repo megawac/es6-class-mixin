@@ -1,5 +1,8 @@
 'use strict';
 
+/**
+ * Dependencies
+ */
 const debug = require('debug')('es6-class-mixin');
 
 
