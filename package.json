@@ -1,6 +1,6 @@
 {
   "name": "es6-class-mixin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Tiny tool to add mixins for ES6 classes.",
   "main": "index.es6",
   "scripts": {
